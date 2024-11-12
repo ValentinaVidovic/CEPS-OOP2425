@@ -1,0 +1,19 @@
+Detaljno objašnjenje linija koda:
+#include <iostream>
+Ova linija uključuje biblioteku <iostream>, koja omogućuje korištenje funkcija za unos i ispis podataka. Koristit ćemo cout za prikazivanje teksta na ekranu.
+
+using namespace std;
+Ovdje koristimo std prostor imena (namespace) kako bismo mogli koristiti cout bez prefiksa std::. Ovo skraćuje kod i olakšava čitanje.
+
+int main() {
+Glavna funkcija programa, gdje počinje izvršavanje koda. Tip int označava da funkcija vraća cijeli broj, što je standard za glavnu funkciju u C++-u.
+
+cout << "Maja" << endl;
+Svaka od ovih linija ispisuje riječ "Maja" i prelazi u novi red pomoću endl. Detaljno objašnjenje:
+
+cout << "Maja" – Prikazuje riječ "Maja" na ekranu.
+<< endl; – Dodajemo endl (end line) kako bismo osigurali prijelaz u novi red nakon ispisa.
+Ovaj ispis ponavljamo pet puta, bez korištenja petlje, tako da svaka rečenica bude na novom retku.
+
+return 0;
+Na kraju programa vraćamo vrijednost 0, što označava uspješan završetak programa.

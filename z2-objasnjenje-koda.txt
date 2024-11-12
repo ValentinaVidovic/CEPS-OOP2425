@@ -1,0 +1,8 @@
+Objašnjenje:
+#include <iostream> – Uključujemo biblioteku <iostream> koja sadrži funkcionalnosti za unos i ispis podataka. Konkretno, koristit ćemo cout za ispis na ekranu.
+using namespace std; – Koristimo std prostor imena da bismo pojednostavili pisanje koda. S njim možemo koristiti cout bez std:: prefiksa.
+int main() – Glavna funkcija programa u C++. Iz nje program počinje izvršavanje.
+cout << "Ucim programirati." << endl; – Funkcija cout ispisuje tekst u navodnicima na ekran. << endl pomiče ispis u novi redak.
+cout << "Koristim C++." << endl; – Ponovno ispisujemo rečenicu s cout, a endl osigurava prijelaz u novi redak.
+cout << "Zdravo svima!" << endl; – Ispisuje zadnju rečenicu i završava prijelazom u novi redak.
+return 0; – Zatvara program vraćanjem vrijednosti 0, što signalizira da je program završio bez grešaka.

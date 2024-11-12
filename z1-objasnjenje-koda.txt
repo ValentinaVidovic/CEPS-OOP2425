@@ -1,0 +1,22 @@
+Detaljno objašnjenje:
+#include <iostream>
+Ova linija uključuje biblioteku <iostream>, koja sadrži funkcije za unos i ispis podataka. Koristit ćemo funkciju cout iz ove biblioteke za prikazivanje teksta na ekranu.
+
+using namespace std;
+Ovdje koristimo std (standardni) prostor imena (namespace) kako bismo pojednostavili korištenje funkcija i objekata iz standardne biblioteke. Bez ove linije, morali bismo pisati std::cout umjesto samo cout za ispis, što bi kod učinilo manje preglednim.
+
+int main() {
+Ovo je glavna funkcija programa, koja označava početak izvršavanja koda. Funkcija main vraća tip podatka int (integer, cijeli broj), što je standard u C++-u i koristi se za označavanje uspješnog završetka programa.
+
+cout << "Ucim programirati. " << "Koristim C++. " << "Zdravo svima!";
+Ova linija koda koristi cout za ispisivanje teksta u istom retku. Detaljno objašnjenje dijelova ove linije:
+
+cout – Objekt za ispis, koji dolazi iz biblioteke <iostream>, koristi se za prikaz teksta ili podataka na ekranu.
+<< – Operator umetanja (insertion operator), koristi se za usmjeravanje podataka prema cout. U ovom slučaju, sve što se nalazi nakon << bit će prikazano na ekranu.
+"Ucim programirati. " – Tekst unutar navodnika je prva rečenica koju će cout ispisati. Razmak nakon točke (.) unutar navodnika osigurava da će se sljedeća rečenica pravilno odvojiti.
+"Koristim C++. " – Druga rečenica, umetnuta pomoću <<. Ponovno, razmak nakon točke u navodnicima omogućava pravilno razdvajanje rečenica.
+"Zdravo svima!" – Treća rečenica koja će se ispisati na ekranu. Ova rečenica završava uskličnikom (!), nakon čega nije potreban razmak jer se više ništa ne ispisuje.
+Budući da ne koristimo endl (što bi dodalo novi redak), sve rečenice će biti ispisane u istom retku.
+
+return 0;
+Ova linija označava kraj programa i vraća vrijednost 0, što je standardan način da se signalizira uspješan završetak programa. Ako bismo koristili drugu vrijednost, to bi moglo značiti da je došlo do greške tijekom izvršavanja.

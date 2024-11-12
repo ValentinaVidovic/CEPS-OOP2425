@@ -1,0 +1,24 @@
+Detaljno objašnjenje linija koda:
+#include <iostream>
+Ova linija uključuje biblioteku <iostream>, koja nam omogućuje unos i ispis podataka putem cin i cout.
+
+using namespace std;
+Koristimo std prostor imena kako bismo pojednostavili pisanje koda i omogućili korištenje cout i cin bez prefiksa std::.
+
+int main() {
+Glavna funkcija programa, koja je početna točka izvršavanja. Tip int označava da funkcija vraća cijeli broj.
+
+cout << "Koliko imas godina? ";
+Ispisuje pitanje korisniku: "Koliko imaš godina?", nakon čega korisnik može unijeti svoje godine.
+
+int godine;
+Definiramo cijeli broj (int) pod nazivom godine koji će primiti korisnikov unos.
+
+cin >> godine;
+Ova linija uzima unos korisnika i pohranjuje ga u varijablu godine.
+
+cout << "Ti imas " << godine << " godina." << endl;
+Ispisuje poruku "Ti imas" zajedno s unesenim godinama te dodaje "godina." na kraju. endl omogućuje prijelaz u novi red nakon ispisa.
+
+return 0;
+Vraća vrijednost 0, što označava uspješan završetak programa.
