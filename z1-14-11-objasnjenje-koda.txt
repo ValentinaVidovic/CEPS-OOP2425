@@ -1,0 +1,37 @@
+Detaljno objašnjenje:
+#include <iostream>
+Ova linija uključuje standardnu knjižnicu koja omogućava korištenje funkcija za unos i ispis podataka (kao što su cin i cout).
+
+using namespace std;
+Ova linija omogućuje korištenje objekata i funkcija iz standardne knjižnice (std), poput cout i cin, bez potrebe za dodatnim navođenjem imenskog prostora (std::).
+
+float a, b;
+Definiraju se dvije varijable a i b tipa float, koje će pohraniti decimalne brojeve unesene od strane korisnika.
+
+int main()
+Ovo je početak glavne funkcije programa. Svaki C++ program mora imati glavnu funkciju (main), koja je početna točka za izvršavanje programa.
+
+cout << "Unesite dva broja: ";
+Ova linija ispisuje poruku na ekran korisniku, tražeći od njega da unese dva broja.
+
+cin >> a >> b;
+Ovdje program čeka da korisnik unese dva broja. Ti brojevi će biti pohranjeni u varijable a i b.
+
+cout << "Zbroj unesenih brojeva je " << a + b << endl;
+Program izračunava zbroj brojeva a i b i ispisuje rezultat na ekran. endl označava kraj retka, što znači da će rezultat biti ispisan na novom redu.
+
+cout << "Razlika unesenih brojeva je " << a - b << endl;
+Program izračunava razliku između brojeva a i b i ispisuje rezultat.
+
+cout << "Umnozak unesenih brojeva je " << a * b << endl;
+Ovdje program izračunava umnožak brojeva a i b i ispisuje rezultat.
+
+cout << "Količnik unesenih brojeva je " << a / b << endl;
+Program izračunava količnik brojeva a i b i ispisuje rezultat. Ovdje se ne provodi provjera dijeljenja s nulom, što bi moglo dovesti do pogreške.
+
+return 0;
+Ova linija označava kraj glavne funkcije main i vraća vrijednost 0, što signalizira da je program uspješno završen.
+
+Dodatna objašnjenja:
+Komentarirani dijelovi koda (//) bili su korišteni za unos brojeva s uputama na ekran, ali su kasnije zamijenjeni kraćim rješenjem za unos oba broja u jednom retku.
+Program ne provodi provjeru valjanosti unosa, kao ni provjeru dijeljenja s nulom, što bi moglo uzrokovati pogrešku u izvođenju programa.

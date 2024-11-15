@@ -1,0 +1,40 @@
+Detaljno objašnjenje:
+#include <iostream>
+Ova linija uključuje knjižnicu koja omogućuje korištenje funkcija za unos i ispis podataka u program (kao što su cin i cout).
+
+using namespace std;
+Ova linija omogućava korištenje objekata i funkcija iz standardne knjižnice (std) bez potrebe za dodatnim navođenjem prefiksa (std::).
+
+int ocjena;
+Definiramo varijablu ocjena tipa int koja će pohraniti ocjenu unesenu od korisnika.
+
+int main()
+Ovo je početak glavne funkcije programa, koja se uvijek mora nalaziti u svakom C++ programu.
+
+cout << "Unesite ocjenu ";
+Ova linija ispisuje korisniku poruku, tražeći od njega da unese svoju ocjenu.
+
+cin >> ocjena;
+Ovdje program čeka unos od korisnika. Unesena vrijednost se pohranjuje u varijablu ocjena.
+
+switch (ocjena) {
+Ovdje počinje switch-case struktura koja omogućava uvjetno grananje na temelju vrijednosti varijable ocjena. To znači da će program izvršiti različite dijelove koda ovisno o vrijednosti ocjena.
+
+case 1:
+Ako je unesena ocjena 1, izvršit će se kod unutar ovog slučaja, a ispisat će se poruka "Nažalost niste položili ispit. Pokušajte ponovno!".
+
+break;
+break služi za izlazak iz switch-case strukture i zaustavlja daljnje izvršavanje drugih slučajeva nakon što je jedan slučaj izvršen.
+
+case 2:
+Ako je unesena ocjena 2, program će ispisati poruku "Čestitam, položili ste ocjenom 2."
+
+default:
+Ako unesena ocjena nije 1, 2, 3, 4, ili 5, program će izvršiti kod unutar default slučaja i ispisati poruku "Pogrešan unos!" za neispravne unose.
+
+return 0;
+Na kraju funkcije main, return 0; označava da je program završio uspješno.
+
+Dodatna objašnjenja:
+Ovaj program koristi switch-case strukturu kako bi na temelju unesene ocjene ispisao odgovarajuću poruku.
+Ako unesena ocjena nije u rasponu od 1 do 5, default slučaj obavještava korisnika o pogrešnom unosu.
